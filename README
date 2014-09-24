@@ -1,0 +1,17 @@
+mpc is a complex floating-point library with exact rounding.
+It is based on the GNU MPFR floating-point library (http://www.mpfr.org/),
+which is itself based on the GNU MP library (http://gmplib.org/).
+
+注意:
+    安装mpc之前请先安装 gmp和mpfr
+	可以分别通过如下方式获取代码:
+	git clone https://github.com/embedded-software/loongson-mpfr.git
+	git clone https://github.com/embedded-software/loongson-gmp.git
+
+	如果电脑是mips架构龙芯cpu，系统是debian，请将mpc安装到/usr目录
+    即配置编译安装过程如下：
+    ./configure --prefix=/usr
+    make
+    make check
+    sudo make uninstall
+    sudo make install
