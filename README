@@ -13,5 +13,4 @@ which is itself based on the GNU MP library (http://gmplib.org/).
     ./configure --prefix=/usr
     make
     make check
-    sudo make uninstall
     sudo make install
